@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+header,
+aside,
+footer,
+section,
+article,
+nav,
+main {
+ display: block;
+}
+
+#wrapper{
+    margin: 0 auto;
+    width: 1000px;
+    background-color: #b135d4;
+}
+
+body{
+    background-image: linear-gradient(#7b1f7e,white);
+}
+
+ul li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    font-weight: bold;
+}
+
+#logo {
+    display: block;
+    position:abolute;
+    margin-left: 50%;
+    background:url(../images/favicon-32x32.png) no-repeat left center;
+    background-size: contain;
+    height: 60px;
+    width: 60px;
+}
+#currSelect{
+    background-color: #420839;
+    text-decoration: underline;
+}
+footer{
+    background-color: #420839;
+    height: 65px;
+    width: 100%;
+    bottom: 0;
+}
+header{
+    padding-top: 18px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #420839;
+
+}
+
+/* layout1 */
+
+#layout1 main{
+    height: 835px;
+}
+#layout1 nav{
+    float: right;
+    width: 18.5%;
+    height: 100%;
+    border-left: 2px solid white; 
+}
+#layout1 ul{
+    margin-top: 10px;
+}
+#layout1 li{
+    margin-left: 10px;
+}
+#layout1 aside{
+    float: left;
+    width: 81%;
+    height: 100%;
+}
+
+#layout1 aside div{
+    height: 300px;
+    width: 175px;
+    border: 2px solid white;
+}
+#layout1 aside section{
+    width: 460px;
+}
+#layout1 .r1{
+    float: right;
+    height: 287px;
+    width: 410px;
+    margin-top: 20px;
+    margin-right: 45px;
+}
+#layout1 .r2 {
+    margin-top: 90px;
+    margin-left: 22px;
+}
+#layout1 .r3{
+    float: right;
+    margin-top: 60px;
+}
+/*/////////////////////////////*/
+
+/* layout2 */
+#layout2 footer{
+    position: fixed; 
+
+}
+#layout2 nav{
+    background: url(../images/p.jpg) repeat-x left center;
+    background-size: contain;
+    height: 180px;
+    width: 100%;
+}
+#layout2 main{
+    height: 650px;
+    float: right;
+    margin-right: 85px;
+}
+#layout2 aside{
+    float: left;
+    width: 16.5%;
+    height: 650px;
+    border-right: 2px solid white;  
+}
+#layout2 ul{
+    margin-left: 16%;
+}
+#layout2 li{
+    margin-top: 140px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#layout2 section.r1 {
+    margin-top: 70px;
+    float: right;
+    width: 285px;
+    height: 85px;
+}
+#layout2 .r1 div {
+    width: 120px;
+    height: 85px;
+    border: 2px solid white;
+}
+#layout2 .r1 .r3{
+    float: right;
+}
+#layout2 .r2{
+    margin-top: 80px;
+}
+#layout2 .r2 div{
+    display: inline-block;
+    border: 2px solid white;
+}
+#layout2 .r2 .r1{
+    height: 110px;
+    width: 270px;
+    
+}
+#layout2 .r2 .r3{
+    height: 280px;
+    width: 410px;
+    margin-left: 20px;
+}
+
+/* ///////////////////////////////// */
+/* #layout3 */
+
+#layout3 li{
+
+    display: inline-block;
+    margin-left: 10px;
+}
+#layout3 nav{
+    background-image: linear-gradient(white,#7b1f7e);
+    background-size: contain;
+    height: 160px;
+    width: 100%;
+}
+#layout3 #hamburgerMenu {
+    background:url(../images/bars.png) no-repeat left center;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin: 10px;
+    
+}
+#layout3 nav button{
+    float: left;
+    color: darkmagenta;
+    font-size: 18px;
+    margin-right: 15px;
+}
+#layout3 footer{
+    position: fixed; 
+}
+#layout3 #boxArea{
+    display: flex;
+    flex-wrap: wrap;
+}
+#layout3 main{
+    margin-left: 8%;
+}
+#layout3 .card{
+    float: left;
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    text-align: center;
+}
+
+#layout3 h1{
+    position: relative;
+    margin-top: 125px;
+    font-size: 270px;
+    color: white;
+    display: inline-block;
+ }
+
+ @media only screen and (min-width:578px){
+    #layout3 #hamburgerMenu {
+        display: none;
+    }
+    #layout3 #wrapper{
+        width: 1000px;
+    }
+    #layout3 .card{
+        margin:40px;
+    }
+    #layout3 li{
+        margin-top: 80px;
+
+    }
+    #layout3 ul{
+        margin-left: 35%;
+    }
+}
+
+@media only screen and (max-width:577px){
+    #layout3 #hamburgerMenu {
+        display: block;
+    }
+    #layout3 #wrapper{
+        width: 100%;
+    }
+    #layout3 .card{
+        margin:20px;
+    }
+    #layout3 li{
+        margin-top: 40px;
+        font-size: 18px;
+    }
+    #layout3 ul{
+        margin-left: 10%;
+    }
+}
+
+
+
