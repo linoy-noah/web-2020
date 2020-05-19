@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="includes/style.css">
+</head>
+
+<body >
+    <canvas id="c"></canvas>
+    <div class="container">
+        <canvas class='hacker-3d-shiz'></canvas>
+        <canvas class='bars-and-stuff'></canvas>
+        <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="GET" autocomplete="on">
+
+            <h1>Join Our Member Club</h1>
+
+
+
+            <form>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Full Name:</label>
+                    <input name="fullName" type="text" class="form-control" id="fullName"
+                        placeholder="Enter Full name" pattern="[A-Z|a-z]+[\s]+[A-Z|a-z|\s]*"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input name="pass" type="password" title="Six letter password" class="form-control"
+                        pattern="[A-Za-z]{6}" id="pass" placeholder="Password">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" name="mail" class="form-control" id="email"
+                        aria-describedby="emailHelp" placeholder="Enter email">
+
+                </div>
+
+
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Your Website: </label>
+                    <input name="website" type="url" class="form-control" id="web"
+                        placeholder="Example input">
+                </div>
+
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Phone Number: </label>
+                    <input name="phone" type="text" pattern="[0-9]{10}" title="0-9,10 digits" class="form-control"
+                        id="phone" placeholder="Example input">
+                </div>
+
+                <div class="form-group">
+                    <label> Amount of coffee you drink a day:
+                        <input name="coffee" type="number"></label>
+                </div>
+                <div class="form-group">
+                    <label for="customRange3">Temperature (now):</label>
+                    <input type="range" name="temper" class="custom-range" min="0" max="45" step="1" id="customRange3">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Address: </label>
+                    <textarea name="address" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <label>Your are interests:
+                        <input name="interests[]" class="c" type="checkbox" value="tennis">tennis
+                        <input name="interests[]" class="c" type="checkbox" value="swim">swim
+                        <input name="interests[]" class="c" type="checkbox" value="travel">travel
+                        <input name="interests[]" class="c" type="checkbox" value="golf">golf
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Gender:
+                        <div class="custom-control custom-radio">
+                            <input name="gender" value="female" type="radio" id="customRadio1" name="customRadio"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">Female</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input name="gender" value="male" type="radio" id="customRadio2" name="customRadio"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">Male</label>
+                        </div>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Age:
+                        <input name="age" type="number" id="age" min="10" max="20" required></label>
+                </div>
+                <label> <input id="submit" type="submit" class="btn btn-primary"></label>
+
+            </form>
+            <div class="output-console"></div>
+    </div>
+    <script src="includes/script2.js"></script>
+  
+</body>
+
+</html>
