@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>first_HandIn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="includes/style.css">
+</head>
+
+<body id="makeDelivery">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="logo" href="index.html"><span>JustSa</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order delivery</a></li>
+                    <li><a href="mydeliveries.html">My deliveries</a></li>
+                    <li class="select"><a href="makeDelivery.html">Make a delivery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="breadcrumb text-center">
+        <li><a href="index.html">Home &nbsp;&nbsp;/</a></li>
+        <li class="active"><a href="del_list.html">Make a delivery</a></li>
+        <li class="login">Hello Alon<div class="ellipse"></div>
+        </li>
+    </ul>
+
+    <main>
+        <div class="container text-center ">
+            <div class="row content">
+                <h1>Make a delivery</h1>
+                <div class="form-group">
+                    <h3>Filter by type:</h3>
+                    <select class="form-control" id="sel2" name="area" required>
+                        <option value="all">Show all</option>
+                        <option value="mail">Mail</option>
+                        <option value="food">Food</option>
+                        <option value="flowers">Flowers</option>
+                        <option value="gift">Gift</option>
+                        <option value="mysteryBox">Mystery Box</option>
+                    </select>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Delivery name</th>
+                            <th>Delivery Area</th>
+                            <th>Size</th>
+                            <th>Comments</th>
+                            <th class="changeStatus"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="1" class="mysteryBox">
+                            <td><span class="mysteryBox"></span>
+                                <p>MY little secret</p>
+                            </td>
+                            <td>
+                                <p>Hashfela</p>
+                            </td>
+                            <td>
+                                <p>L</p>
+                            </td>
+                            <td>
+                                <p>Do not open!!</p>
+                            </td>
+                            <td>
+                                <div class="o3">Delivery has arrieved</div>
+                            </td>
+                        </tr>
+                        <tr id="2" class="food">
+                            <td><span class="food"></span>
+                                <p>Food box</p>
+                            </td>
+                            <td>
+                                <p>Gush Dan</p>
+                            </td>
+                            <td>
+                                <p>S</p>
+                            </td>
+                            <td>
+                                <p>Give by hand</p>
+                            </td>
+                            <td>
+                                <div class="o2">I'm on my way!</div>
+                            </td>
+                        </tr>
+
+                        <tr id="3" class="flowers">
+                            <td><span class="flowers"></span>
+                                <p>Flowers to my husband</p>
+                            </td>
+                            <td>
+                                <p>Galil</p>
+                            </td>
+                            <td>
+                                <p>M</p>
+                            </td>
+                            <td>
+                                <p></p>
+                            </td>
+                            <td>
+                                <div class="o1">I will take it!</div>
+
+                            </td>
+                        </tr>
+                        <tr id="4" class="giftBox">
+                            <td><span class="giftBox"></span>
+                                <p>Ron's birthday gift</p>
+                            </td>
+                            <td>
+                                <p>Ramat Hagolan</p>
+                            </td>
+                            <td>
+                                <p>M</p>
+                            </td>
+                            <td>
+                                <p>Leave delivery by the door outside</p>
+                            </td>
+                            <td>
+                                <div class="o1">I will take it!</div>
+
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </main>
+    <script src="includes/script.js " async></script>
+</body>
+
+</html>

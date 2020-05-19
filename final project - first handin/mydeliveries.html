@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>first_HandIn</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="includes/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="logo" href="index.html"><span>JustSa</span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="order.html">Order delivery</a></li>
+          <li class="select"><a href="mydeliveries.html">My deliveries</a></li>
+          <li><a href="makeDelivery.html">Make a delivery</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <ul class="breadcrumb text-center">
+    <li><a href="index.html">Home &nbsp;&nbsp;/</a></li>
+    <li class="active"><a href="del_list.html">My deliveries</a></li>
+    <li class="login">Hello Dana<div class="ellipse"></div>
+    </li>
+  </ul>
+
+  <main>
+    <div class="container text-center ">
+      <div class="row content">
+        <h1>My deliveries</h1>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Delivery name</th>
+              <th>Delivery Area</th>
+              <th>Delivery Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="1" class="mysteryBox">
+              <td><span class="mysteryBox"></span>
+                <p>MY little secret</p>
+              </td>
+              <td>
+                <p>Hashfela</p>
+              </td>
+              <td>
+                <p>Delivery is on it's way<br><a href="progress.html?id=1" class="deliveryTrack"><span>Delivery
+                      tracking</span></a></p>
+              </td>
+              <td></td>
+            </tr>
+            <tr id="2" class="food">
+              <td><span class="food"></span>
+                <p>Food box</p>
+              </td>
+              <td>
+                <p>Gush Dan</p>
+              </td>
+              <td>
+                <p>Delivery has been collected<br><a href="progress.html?id=2" class="deliveryTrack"><span>Delivery
+                      tracking</span></a>
+                </p>
+              </td>
+              <td></td>
+            </tr>
+
+            <tr id="3" class="flowers">
+              <td><span class="flowers"></span>
+                <p>Flowers to my husband</p>
+              </td>
+              <td>
+                <p>Galil</p>
+              </td>
+              <td>
+                <p>Wating for pick-up<br><a href="progress.html?id=3" class="deliveryTrack"><span>Delivery
+                      tracking</span></a></p>
+              </td>
+              <td>
+                <div class="del"></div>
+              </td>
+            </tr>
+            <tr id="4" class="giftBox">
+              <td><span class="giftBox"></span>
+                <p>Ron's birthday gift</p>
+              </td>
+              <td>
+                <p>Ramat Hagolan</p>
+              </td>
+              <td>
+                <p>Wating for pick-up<br><a href="progress.html?id=4" class="deliveryTrack"><span>Delivery
+                      tracking</span></a></p>
+              </td>
+              <td>
+                <div class="del"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <script src="includes/script2.js " async></script>
+</body>
+
+</html>
